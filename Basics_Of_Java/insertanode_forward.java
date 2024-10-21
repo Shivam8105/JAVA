@@ -1,6 +1,6 @@
 package Basics_Of_Java;
 
-class doubly_linkedList{
+class double_linkedList{
     static class node{
         int data;
         node next;
@@ -82,3 +82,4 @@ class doubly_linkedList{
         return head;
     }
 }
+
