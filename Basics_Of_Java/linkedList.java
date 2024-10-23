@@ -25,7 +25,7 @@ class LinkedList {
         }
         System.out.println(" -> NULL");
     }
-    
+
     public static void main(String[] args) {
         LinkedList List = new LinkedList();
         List.insertAtBeginning(1);

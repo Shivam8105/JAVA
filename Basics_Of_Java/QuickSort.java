@@ -65,9 +65,7 @@ public class QuickSort {
             quickSort(arr,low,pivotIdx - 1);
             quickSort(arr,pivotIdx + 1, high);
         }
-
     }
-
     public static void main(String[] args) {
         int[] arr = { 5, 4, 3, 2, 1, 0 };
         int n = arr.length;
