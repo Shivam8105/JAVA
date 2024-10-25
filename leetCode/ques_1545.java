@@ -1,5 +1,3 @@
-package leetCode;
-
 import java.util.Scanner;
 
 class ques_1545 {

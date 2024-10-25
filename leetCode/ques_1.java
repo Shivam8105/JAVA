@@ -1,4 +1,3 @@
-package leetCode;
 import java.util.*;
 public class ques_1 {
     public static int[] twoSum(int[] nums, int target) {
