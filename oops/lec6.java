@@ -1,20 +1,21 @@
 package oops;
 
-class Animal{
+class Animal {
     String name = "Shivam";
 }
 
-class Dog extends Animal{
+class Dog extends Animal {
     String name = "Kumar";
 
-    void displayNames(){
-        System.out.println(name);
-        System.out.println(super.name);
+    void hello() {
+        System.out.println(name);       
+        System.out.println(super.name); 
     }
 }
+
 public class lec6 {
     public static void main(String[] args) {
         Dog dog = new Dog();
-        dog.displayNames();
+        dog.hello(); 
     }
 }
