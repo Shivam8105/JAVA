@@ -113,5 +113,7 @@ public class practice {
         obj.removeFront();
         obj.removeRear();
         obj.display();
+
+        System.out.println(obj.size());
     }
 }
