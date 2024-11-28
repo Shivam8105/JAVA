@@ -16,17 +16,21 @@ public class Deque {
     private Node front;
     private Node rear;
     private int size;
+
     public Deque() {
         front = null;
         rear = null;
         size = 0;
     }
+
     public boolean isEmpty() {
         return size == 0;
     }
+
     public int size() {
         return size;
     }
+
     public void addFront(int data) {
         Node newNode = new Node(data);
 
@@ -39,6 +43,7 @@ public class Deque {
         }
         size++;
     }
+
     public void addRear(int data) {
         Node newNode = new Node(data);
 
@@ -68,6 +73,7 @@ public class Deque {
         size--;
         return data;
     }
+
     public int removeRear() {
         if (isEmpty()) {
             throw new IllegalStateException("Deque is empty");
@@ -84,18 +90,7 @@ public class Deque {
         size--;
         return data;
     }
-    public int peekFront() {
-        if (isEmpty()) {
-            throw new IllegalStateException("Deque is empty");
-        }
-        return front.data;
-    }
-    public int peekRear() {
-        if (isEmpty()) {
-            throw new IllegalStateException("Deque is empty");
-        }
-        return rear.data;
-    }
+
     public void display() {
         if (isEmpty()) {
             System.out.println("Deque is empty");
@@ -104,11 +99,12 @@ public class Deque {
 
         Node current = front;
         while (current != null) {
-            System.out.print(current.data + " ");
+            System.out.print(current.data + " -> ");
             current = current.next;
         }
-        System.out.println();
+        System.out.println("null");
     }
+
     public static void main(String[] args) {
         Deque deque = new Deque();
 
@@ -119,9 +115,6 @@ public class Deque {
 
         System.out.println("Deque elements:");
         deque.display();
-
-        System.out.println("Front element: " + deque.peekFront());
-        System.out.println("Rear element: " + deque.peekRear());
 
         System.out.println("Removed from front: " + deque.removeFront());
         System.out.println("Removed from rear: " + deque.removeRear());
