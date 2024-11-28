@@ -12,12 +12,12 @@ class Node {
     }
 }
 
-public class Deque {
+public class practice {
     private Node front;
     private Node rear;
     private int size;
 
-    public Deque() {
+    practice() {
         front = null;
         rear = null;
         size = 0;
@@ -46,7 +46,6 @@ public class Deque {
 
     public void addRear(int data) {
         Node newNode = new Node(data);
-
         if (isEmpty()) {
             front = rear = newNode;
         } else {
@@ -60,7 +59,6 @@ public class Deque {
     public int removeFront() {
         if (isEmpty()) {
             System.out.println("Queue is empty");
-            return -1;
         }
         int data = front.data;
         if (front == rear) {
@@ -76,7 +74,6 @@ public class Deque {
     public int removeRear() {
         if (isEmpty()) {
             System.out.println("Queue is empty");
-            return -1;
         }
         int data = rear.data;
         if (front == rear) {
@@ -89,12 +86,11 @@ public class Deque {
         return data;
     }
 
-    public void display() {
-        if (isEmpty()) {
-            System.out.println("Deque is empty");
+    public void display(){
+        if(isEmpty()){
+            System.out.println("queue is empty");
             return;
         }
-
         Node current = front;
         while (current != null) {
             System.out.print(current.data + " -> ");
@@ -104,20 +100,18 @@ public class Deque {
     }
 
     public static void main(String[] args) {
-        Deque deque = new Deque();
+        practice obj = new practice();
+        obj.addFront(10);
+        obj.addFront(20);
+        obj.addFront(30);
+        obj.display();
 
-        deque.addFront(10);
-        deque.addFront(20);
-        deque.addRear(30);
-        deque.addRear(40);
+        obj.addRear(40);
+        obj.addRear(50);
+        obj.display();
 
-        System.out.println("Deque elements:");
-        deque.display();
-
-        System.out.println("Removed from front: " + deque.removeFront());
-        System.out.println("Removed from rear: " + deque.removeRear());
-
-        System.out.println("Deque elements after removals:");
-        deque.display();
+        obj.removeFront();
+        obj.removeRear();
+        obj.display();
     }
 }
