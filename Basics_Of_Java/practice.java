@@ -36,6 +36,7 @@ public class practice {
 
         if (isEmpty()) {
             front = rear = newNode;
+            return;
         } else {
             newNode.next = front;
             front.prev = newNode;
@@ -48,6 +49,7 @@ public class practice {
         Node newNode = new Node(data);
         if (isEmpty()) {
             front = rear = newNode;
+            return;
         } else {
             newNode.prev = rear;
             rear.next = newNode;
