@@ -16,25 +16,17 @@ public class Deque {
     private Node front;
     private Node rear;
     private int size;
-
-    // Constructor to initialize the deque
     public Deque() {
         front = null;
         rear = null;
         size = 0;
     }
-
-    // Check if the deque is empty
     public boolean isEmpty() {
         return size == 0;
     }
-
-    // Get the size of the deque
     public int size() {
         return size;
     }
-
-    // Add an element at the front of the deque
     public void addFront(int data) {
         Node newNode = new Node(data);
 
@@ -47,8 +39,6 @@ public class Deque {
         }
         size++;
     }
-
-    // Add an element at the rear of the deque
     public void addRear(int data) {
         Node newNode = new Node(data);
 
@@ -119,7 +109,6 @@ public class Deque {
         }
         System.out.println();
     }
-
     public static void main(String[] args) {
         Deque deque = new Deque();
 
