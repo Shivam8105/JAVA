@@ -119,5 +119,6 @@ public class Deque {
 
         System.out.println("Deque elements after removals:");
         deque.display();
+        System.out.println(deque.size());
     }
 }
