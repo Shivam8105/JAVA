@@ -1,6 +1,10 @@
 package LearningJava;
 
 public class stringBuilder {
+    public stringBuilder(String string) {
+        //TODO Auto-generated constructor stub
+    }
+
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder("Bhutiya");
         System.out.println(sb);
@@ -35,5 +39,10 @@ public class stringBuilder {
         System.out.println(sb);
         //!  print length
         System.out.println(sb.length());
+    }
+
+    public char[] charAt(int i) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'charAt'");
     }
 }
