@@ -98,34 +98,34 @@ package midTermPreparation;
 
 //! inheritance
 
-// class Parent{
-//     void money(){
-//         System.out.println("They are very rich");
-//     }
-// }
+class Parent{
+    void money(){
+        System.out.println("They are very rich");
+    }
+}
 
-// class son extends Parent{
-//     void money_2(){
-//         System.out.println("They are dependent of parents for money");
-//     }
-// }
+class son extends Parent{
+    void money_2(){
+        System.out.println("They are dependent of parents for money");
+    }
+}
 
-// class daughter extends Parent{
-//     void money_3(){
-//         System.out.println("They are also dependent on parents for their money");
-//     }
-// }
+class daughter extends Parent{
+    void money_3(){
+        System.out.println("They are also dependent on parents for their money");
+    }
+}
 
-// public class javaProgramming{
-//     public static void main(String[] args) {
-//         daughter obj1 = new daughter();
-//         obj1.money_3();
+public class javaProgramming{
+    public static void main(String[] args) {
+        daughter obj1 = new daughter();
+        obj1.money_3();
 
-//         son obj2 = new son();
-//         obj2.money_2();
-//         obj2.money();
-//     }
-// }
+        son obj2 = new son();
+        obj2.money_2();
+        obj2.money();
+    }
+}
 
 //! polymorphism 
 
@@ -588,21 +588,21 @@ package midTermPreparation;
 
 //! Anonymous Inner class
 
-// interface Greeting{
-//     void sayHello();
-// }
+interface Greeting{
+    void sayHello();
+}
 
-// public class Main{
-//     public static void main(String[] args) {
-//         Greeting greeting = new Greeting() {
-//             @Override
-//             public void sayHello(){
-//                 System.out.println("Hello this is a anonymous inner class");
-//             }
-//         };
-//         greeting.sayHello();
-//     }
-// }
+public class Main{
+    public static void main(String[] args) {
+        Greeting greeting = new Greeting() {
+            @Override
+            public void sayHello(){
+                System.out.println("Hello this is a anonymous inner class");
+            }
+        };
+        greeting.sayHello();
+    }
+}
 
 //! Exception handling
 
@@ -981,3 +981,4 @@ package midTermPreparation;
 //         System.out.println("After reverse: " + sb);
 //     }
 // }
+
