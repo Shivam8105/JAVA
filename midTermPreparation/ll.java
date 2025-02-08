@@ -196,38 +196,38 @@ package midTermPreparation;
 
 //! create a singly linked list
 
-public class ll {
-    static class node {
-        int data;
-        node next;
+// public class ll {
+//     static class node {
+//         int data;
+//         node next;
 
-        node(int data) {
-            this.data = data;
-            this.next = null;
-        }
-    }
+//         node(int data) {
+//             this.data = data;
+//             this.next = null;
+//         }
+//     }
 
-    public static void main(String[] args) {
-        node n1 = new node(10);
-        node n2 = new node(20);
-        node n3 = new node(30);
-        node n4 = new node(40);
+//     public static void main(String[] args) {
+//         node n1 = new node(10);
+//         node n2 = new node(20);
+//         node n3 = new node(30);
+//         node n4 = new node(40);
 
-        n1.next = n2;
-        n2.next = n3;
-        n3.next = n4;
-        printlist(n1);
-    }
+//         n1.next = n2;
+//         n2.next = n3;
+//         n3.next = n4;
+//         printlist(n1);
+//     }
 
-    public static void printlist(node head) {
-        node current = head;
-        while (current != null) {
-            System.out.print(current.data + " -> ");
-            current = current.next;
-        }
-        System.out.println("null");
-    }
-}
+//     public static void printlist(node head) {
+//         node current = head;
+//         while (current != null) {
+//             System.out.print(current.data + " -> ");
+//             current = current.next;
+//         }
+//         System.out.println("null");
+//     }
+// }
 
 //! create a doubly linkedlist
 
