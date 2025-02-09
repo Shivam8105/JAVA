@@ -1,3 +1,4 @@
+package graphs;
 public class graph {
     public static void main(String[] args) {
         String[] value = {"A","B","c","D"};

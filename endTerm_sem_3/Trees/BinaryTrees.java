@@ -1,3 +1,4 @@
+package Trees;
 public class BinaryTrees {
     static class Node{
         int data;
