@@ -346,7 +346,7 @@ package midTermPreparation;
 //! creation of circular doubly linked list
 
 
-// public class dsa{
+// public class ll{
 //     static class node{
 //         int data;
 //         node next;

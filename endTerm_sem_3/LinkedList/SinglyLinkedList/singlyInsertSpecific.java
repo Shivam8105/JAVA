@@ -46,7 +46,6 @@ public class singlyInsertSpecific {
             Node n = insertNode(newNode, 3, n1);
             System.out.print("After inserting a new node: ");
             traversal(n);
-
         }
 
     }
