@@ -2,7 +2,6 @@ package LearningJava;
 
 public class stringBuilder {
     public stringBuilder(String string) {
-        //TODO Auto-generated constructor stub
     }
 
     public static void main(String[] args) {
@@ -42,7 +41,6 @@ public class stringBuilder {
     }
 
     public char[] charAt(int i) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'charAt'");
     }
 }
