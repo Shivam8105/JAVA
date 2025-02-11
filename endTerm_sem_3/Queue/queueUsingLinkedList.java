@@ -8,6 +8,7 @@ class Node{
         this.next = null;
     }
 }
+
 public class queueUsingLinkedList {
     private Node front,rear;
     private int size;
