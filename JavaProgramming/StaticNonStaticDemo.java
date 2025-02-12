@@ -2,36 +2,36 @@ package JavaProgramming;
 
 //! Create a Java class with both static and non-static members. Write a program to call these members from the main method and explain the difference between their behavior.
 
-class Example {
-    // Static variable
-    static int staticVar = 10;
+// class Example {
+//     // Static variable
+//     static int staticVar = 10;
 
-    // Non-static variable
-    int nonStaticVar = 20;
+//     // Non-static variable
+//     int nonStaticVar = 20;
 
-    // Static method
-    static void staticMethod() {
-        System.out.println("Static method called. Static var: " + staticVar);
-    }
+//     // Static method
+//     static void staticMethod() {
+//         System.out.println("Static method called. Static var: " + staticVar);
+//     }
 
-    // Non-static method
-    void nonStaticMethod() {
-        System.out.println("Non-static method called. Non-static var: " + nonStaticVar);
-    }
-}
+//     // Non-static method
+//     void nonStaticMethod() {
+//         System.out.println("Non-static method called. Non-static var: " + nonStaticVar);
+//     }
+// }
 
-public class StaticNonStaticDemo {
-    public static void main(String[] args) {
-        // Calling the static method and variable directly using the class name
-        Example.staticMethod();
-        System.out.println("Accessing static variable: " + Example.staticVar);
+// public class StaticNonStaticDemo {
+//     public static void main(String[] args) {
+//         // Calling the static method and variable directly using the class name
+//         Example.staticMethod();
+//         System.out.println("Accessing static variable: " + Example.staticVar);
 
-        // Creating an object to access non-static members
-        Example obj = new Example();
-        obj.nonStaticMethod();
-        System.out.println("Accessing non-static variable: " + obj.nonStaticVar);
-    }
-}
+//         // Creating an object to access non-static members
+//         Example obj = new Example();
+//         obj.nonStaticMethod();
+//         System.out.println("Accessing non-static variable: " + obj.nonStaticVar);
+//     }
+// }
 
 // ! Design a Java program that accepts a string as a command-line argument and checks whether it is a palindrome. Use StringBuffer or StringBuilder in your solution
 
