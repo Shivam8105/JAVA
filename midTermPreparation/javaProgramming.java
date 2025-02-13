@@ -675,7 +675,7 @@ package midTermPreparation;
 //     }
 // }
 
-//! Implementation of Thread
+//! Implementation of Thread using runnable interface
 
 // class Myrunnable implements Runnable{
 //     public void run(){
